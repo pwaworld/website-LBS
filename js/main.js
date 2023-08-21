@@ -19,3 +19,8 @@ function openRightMenu() {
 $(document).ready(function(){
 	console.log("Ready ...Go");
   });
+
+
+  function myFunction() {
+    console.log("Cliecked  ...Go");
+  }

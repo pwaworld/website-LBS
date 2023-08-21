@@ -9,11 +9,11 @@
 
 body {
 	--background: var(--second-color);
-	
+
 }
 
 
-.bg-lbs-black{
+.bg-lbs-black {
 	background-color: #0a0a0a;
 }
 
@@ -33,26 +33,155 @@ body {
 	cursor: cell;
 }
 
-.footer-effect {
-	
+.footer-effect {}
 
+
+
+.header-bg-custom1 {
+	opacity: 0.5;
+	background-image: url(/resources/background/contact-bg.jpg);
+	background-color: #C82828;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.bg-offce {
+
+}
+
+hr {
+	background: linear-gradient(to right, blue, red);
+	height: 8px;
 }
 
 
 
-.header-bg-custom1{
+
+.m-over:hover{
+	background-color: aqua;
 	opacity: 0.5;
-	background-image: url(/resources/background/contact-bg.jpg);  
-	background-color: #C82828; 
-	 background-repeat: no-repeat;
-	   background-size: cover;
-	}
+}
 
 
-	.bg-offce{
 
-		
+
+         
+.btn-grad {
+	background-image: linear-gradient(to right, #43cea2 0%, #185a9d  51%, #43cea2  100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
 	
+  }
+
+  .btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+ 
+  
+
+
+  
+.wrapper{
+	width: 100%;
+	margin: 2em auto;
+	--background: #5b95c7;
+	clear: both;
+	overflow: hidden;
+  }
+  
+  .wrapper ul{
+	width: 900px; 
+	margin: 0px auto;
+  }
+  
+  .wrapper ul li{
+	border-right: 1px solid #3D464E;
+	cursor: pointer;
+	float: left;
+	overflow: hidden;
+	height: 177px;
+	list-style: none;
+	position: relative;
+	width: 72px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	background: #fff;
+  }
+  
+  .wrapper li a{
+	display: block;
+	width: 100px;
+	height: 177px;
+	line-height: 177px;
+	color: #fff;
+	text-decoration: none;
+	text-indent: 10px;
+	height: 177px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 72px;
+	text-indent: -999px;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+  }
+  
+  .wrapper ul li:first-child a{
+	--background: url("http://www.htmldrive.net/edit_media/2013/201306/20130604/accordion/css/behance_btn.gif") left top;
+
 	
-	   
-	}
+  }
+  
+  .wrapper ul li:nth-child(2) a{
+	background-color: #288585;
+	--background: url("http://www.htmldrive.net/edit_media/2013/201306/20130604/accordion/css/flickr_btn.gif") left top;
+  }
+  
+  .wrapper ul li:nth-child(3) a{
+	background-color: #b6f1f1;
+	--background: url("http://www.htmldrive.net/edit_media/2013/201306/20130604/accordion/css/linkedin_btn.gif") 
+  }
+  
+  .wrapper ul li:nth-child(4) a{
+	
+	background-color: #00FFFF;
+	
+  }
+  
+  .wrapper ul li:nth-child(5) a{
+	background-color: #3d5a5a;
+  }
+  
+  .wrapper ul li:hover a{
+	background-position: right top;
+  }
+  
+  .wrapper ul li:hover{
+	width: 350px;
+  }
+  
+  .wrapper p{
+   color: #ec0c0c;
+	font-size: 15px;
+	letter-spacing: 0;
+	line-height: 18px;
+	padding-top: 40px;
+	width: 225px;
+	margin: 0px 7em;
+  }
+  
+  
+  
+
+  
+
