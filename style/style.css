@@ -9,6 +9,12 @@
 
 body {
 	--background: var(--second-color);
+	
+}
+
+
+.bg-lbs-black{
+	background-color: #0a0a0a;
 }
 
 
@@ -29,10 +35,24 @@ body {
 
 .footer-effect {
 	
-	
 
 }
 
 
 
-/****************Start**************************/
+.header-bg-custom1{
+	opacity: 0.5;
+	background-image: url(/resources/background/contact-bg.jpg);  
+	background-color: #C82828; 
+	 background-repeat: no-repeat;
+	   background-size: cover;
+	}
+
+
+	.bg-offce{
+
+		
+	
+	
+	   
+	}
