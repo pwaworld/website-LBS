@@ -181,7 +181,10 @@ hr {
   }
   
   
-  
+  .custom-cursor {
+	cursor: url('/resources/cursors/cursor-bg.svg'), auto;
+  }
+
 
   
 
