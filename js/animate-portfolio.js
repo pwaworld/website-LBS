@@ -1,5 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
+
+
+	$(document).ready(function(){
+        $.getJSON("/data-json/portfolio-data.json", function(data){
+            console.log(data.name); // Prints: Harry
+            console.log(data.dataprojects); // Prints: 14
+        }).fail(function(){
+            console.log("An error has occurred.");
+        });
+    });
+
+
+
+
+
 	'use strict';
 
 	gsap.registerPlugin(ScrollTrigger);

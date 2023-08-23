@@ -61,4 +61,32 @@ tl.reverse();
 		  .add(middle(), "+=3")     //with a gap of 2 seconds
 		  .add(conclusion(), "-=1") 
 
+
+		  (function(){
+			$('.flex-container').waitForImages(function() {
+				
+			}, $.noop, true);
+			
+			$(".flex-slide").each(function(){
+				$(this).hover(function(){
+					$(this).find('.flex-title').css({
+						transform: 'rotate(0deg)',
+						top: '10%'
+					});
+					$(this).find('.flex-about').css({
+						opacity: '1'
+					});
+				}, function(){
+					$(this).find('.flex-title').css({
+						transform: 'rotate(90deg)',
+						top: '15%'
+					});
+					$(this).find('.flex-about').css({
+						opacity: '0'
+					});
+				})
+			});
+		})();
+
+
 });
