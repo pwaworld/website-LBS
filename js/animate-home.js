@@ -7,24 +7,47 @@ document.addEventListener("DOMContentLoaded", function () {
 	const gTl = gsap.timeline();
 
 	var tl = gsap.timeline({repeat: 2, repeatDelay: 1});
-	tl.to("#section-903", {x: 900, duration: 2});
+	
 
-	tl.to("#section-902", {x: 900, duration: 2});
+	gsap.to("#section-h2", {
+		opacity: 0.9
+	  });
 
-	tl.to("#section-901", {x: 900, duration: 2});
+
+	  
+	gsap.to("#section-resources1", {
+		x: 400,
+		duration: 1,
+		
+		scrollTrigger: {
+		  trigger: ".b",
+		  start: "top center",
+		  end: "top 100px",
+		  scrub: true,
+		  markers: true,
+		  id: "section-resources"
+		}
+	  });
+
+
+	  
+	
+	//tl.to("#section-h5", {x: 150, duration: 1});
+	//tl.to("#section-h6", {x: 200, duration: 2});
+	//tl.to("#section-h7", {x: 250, duration: 2});
+	
+
 //tl.to("#section-2", {x: 2000, duration: 3});
-tl.to("#section-904", {opacity: 0, duration: 2});
+//tl.to("#section-h9", {opacity: 0, duration: 2});
 
 
-tl.to("#section-900", {y: 900, duration: 2});
-
-
+//tl.to("#section-h8", {y: 900, duration: 2});
 
 // then we can control the whole thing easily...
 
 //tl.resume(); 
-tl.seek(5.0);
-tl.reverse();
+//tl.seek(5.0);
+//tl.reverse();
 
 	console.log("data  animate "+gTl);
 	console.log("start animate ");
@@ -61,32 +84,6 @@ tl.reverse();
 		  .add(middle(), "+=3")     //with a gap of 2 seconds
 		  .add(conclusion(), "-=1") 
 
-
-		  (function(){
-			$('.flex-container').waitForImages(function() {
-				
-			}, $.noop, true);
-			
-			$(".flex-slide").each(function(){
-				$(this).hover(function(){
-					$(this).find('.flex-title').css({
-						transform: 'rotate(0deg)',
-						top: '10%'
-					});
-					$(this).find('.flex-about').css({
-						opacity: '1'
-					});
-				}, function(){
-					$(this).find('.flex-title').css({
-						transform: 'rotate(90deg)',
-						top: '15%'
-					});
-					$(this).find('.flex-about').css({
-						opacity: '0'
-					});
-				})
-			});
-		})();
 
 
 });

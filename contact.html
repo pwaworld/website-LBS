@@ -205,85 +205,118 @@
 	</div>
 	<!-- Modal end -->
 
-	<header class="d-flex flex-wrap justify-content-center py-3 header-bg-custom2">
 
-		<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-			style="padding-left: 80px;">
-			<img src="/resources/logo-white.png" class="rounded" style="height: 100px; width: 200px;" alt="logo here">
-		</a>
 
-		<ul class="nav nav-pills " style="align-items: center; padding-right: 80px;">
-			<li class="nav-item"><a href="#" class="nav-link text-effect">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect">Services</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect">Portfolio</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect">About</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect">LBS In-House</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect-active" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvas">Contact</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvas">Careers</a></li>
-			<li class="nav-item"><a href="#" class="nav-link text-effect" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvas">
-					<img src="/resources/iconmonstr-menu-right-lined.svg" width="30px" height="30px"
-						alt="My menu SVG" />
-				</a></li>
+		<header class="d-flex flex-wrap justify-content-center header-bg-custom2" style="height: 313px;">
+			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+				style="padding-left: 80px;">
+				<img src="/resources/logo-white.png" class="rounded" style="height: 100px; width: 230px;" alt="lbs logo">
+			</a>
+			<ul class="nav nav-pills " style="align-items: center; padding-right: 80px;">
+								
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect">Home</a></li>
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect">Services</a></li>
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect">Portfolio</a></li>
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect">About</a></li>
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect">LBS In-House</a></li>
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect-active" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvas">Contact</a></li>
+				<li class="nav-item s-view" ><a href="#" class="nav-link text-effect" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvas">Careers</a></li>
+				<li class="nav-item showhim"><a href="#" class="nav-link text-effect" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvas">
+						<img class="ok" src="/resources/m-2-final.png"  width="48px" height="40px" alt="My menu SVG" />
+						<img class="showme"  src="/resources/m-1-final.png" width="48px" height="40px" alt="My menu SVG" />
+					</a></li>
+					
+			</ul>
 
-		</ul>
+			<div class="container-fluid text-pink text-uppercase  text-center">
+				<h1 style="font-size: 60px; font-family: Audiowide ">Contact US</h1>
+			</div>
 
-		<div class="container-fluid text-pink text-uppercase  text-center">
-			<h1 style="font-size: 60px; font-family: Audiowide ">Contact US</h1>
-		</div>
+		</header>
 
-	</header>
+	
+
+
 
 <div style="background-color: black;">
 
+	
+	<section id="section-0" style="height: 1128px; border-color: black">
 
-	<section id="section-0" style="border-style: groove;" class="bg-lbs-black">
-
-		<div class="container" style="border-style: dotted;">
+		<div class="container-fluid"  style=" width: 100%;  background-color: black; padding-left: 80px; padding-right: 80px;  padding-top: 60px;">
 
 
 			<form>
 				<div class="row">
-					<div class="col-10" style="background-color: aqua;">.col-9 Title of th form </div>
+					<div class="col-10" > </div>
 					<div class="col-5">
 
-						<img src="resources/background/offcie-bg.jpg" class="img-fluid" alt="...">
+						<img src="resources/contact-bg.png"  style="height: 918px; width: 706px;" class="img-fluid" alt="...">
 
 					</div>
 					<div class="col-5">
 						<div class="form-group row">
 							<div class="col-sm">
-								<input type="password" class="form-control" id="input1" placeholder="Name">
+								<input type="text"  style="height: 80px; width: 812px;" class="form-control" id="input1" placeholder="Name" required>
 							</div>
 						</div> <br>
 						<div class="form-group row">
 							<div class="col-sm ">
-								<input type="text" class="form-control " id="input2" placeholder="Phone Number">
+								<input type="number"  style="height: 80px; width: 812px;" class="form-control " id="input2" placeholder="Phone Number" required>
 							</div>
 						</div> <br>
 						<div class="form-group row">
 							<div class="col-sm">
-								<input type="text" class="form-control" id="input4" placeholder="Category">
+								<select id="inputState" style="height: 80px; width: 812px;" class="form-control" required>
+									<option selected>Choose Category</option>
+									<option>VFX</option>
+									<option>Animation</option>
+									<option>Visual Graphics</option>
+									<option>Assets</option>
+									<option>Training</option>
+									<option>Others</option>
+								</select>
+
+
+								
 							</div>
 						</div> <br>
 
 						<div class="form-group row">
 							<div class="col-sm">
-								<input type="text" class="form-control" id="input3" placeholder="Email">
+								<input type="email" style="height: 80px; width: 812px;" class="form-control" id="input3" placeholder="Email" required>
 							</div>
 						</div> <br>
 						<div class="form-group row">
 							<div class="col-sm">
-								<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
-									rows="3"></textarea>
+								<textarea class="form-control"  style="height: 217px; width: 812px;" id="exampleFormControlTextarea1" placeholder="Message"
+									rows="3" required></textarea>
 							</div>
 						</div> <br>
 						<div class="form-group row ">
-							<div class="col-sm ">
-								<button type="button" class="btn .btn-lg btn-danger ">Send Message</button>
+							
+							<div class="showhim col-sm">
+								<div class="showme">
+									<button type="button" class=" btn-lbs-after btn-lg "> <b>Send Message &nbsp; <span
+												style="color: #00FFFF;">
+												<i class="bi bi-arrow-right"></i>
+											</span> </b></button>
+								</div>
+								<div class="ok">
+									<button type="button" class=" btn-lbs-before btn-lg "> <b>Send Message &nbsp; <span
+												style="color: #00FFFF;">
+												<i class="bi bi-arrow-right"></i>
+											</span> </b></button>
+								</div>
 							</div>
+
+
+							
+
+							
 						</div>
 
 					</div>
@@ -293,8 +326,6 @@
 			</form>
 			<br>
 		</div>
-
-
 
 	</section>
 
