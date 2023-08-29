@@ -4,16 +4,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	gsap.registerPlugin(ScrollTrigger);
 
+	let sectiomList = gsap.utils.toArray('section')
+
+	console.log("sectiomList  start ",sectiomList);
+
+
+
+
+	gsap.to(".slide-s", {rotation: 360, x: 100, duration: 2});
+
+
+	//header comming from top to zero position 
+	gsap.fromTo(".hed-c", {y: -100},{ y: 0, duration: 2});
+	gsap.fromTo(".text-1", {x: -100},{ x: 0, duration: 1});
+
+
+	ScrollTrigger.defaults({
+		toggleActions: "restart pause resume pause"
+		//scroller: ".container"
+	  });
 	const gTl = gsap.timeline();
 
 	var tl = gsap.timeline({repeat: 2, repeatDelay: 1});
-	
+
+	gsap.to("#section-projects", {
+		x: 400,
+		duration: 1,
+		
+		scrollTrigger: {
+		  trigger: "#section-projects",
+		  start: "top center",
+		  end: "top 600px",
+		  scrub: true,
+		  markers: true,
+		  id: "section-projects"
+		}
+	  });
+
+
 
 	gsap.to("#section-h2", {
 		opacity: 0.9
 	  });
-
-
 	  
 	gsap.to("#section-resources1", {
 		x: 400,
@@ -28,9 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		  id: "section-resources"
 		}
 	  });
-
-
-	  
 	
 	//tl.to("#section-h5", {x: 150, duration: 1});
 	//tl.to("#section-h6", {x: 200, duration: 2});

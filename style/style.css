@@ -257,6 +257,8 @@ hr {
   }
 
 
+
+
   .bg-vedio{
 
 
@@ -309,6 +311,18 @@ hr {
 	font-weight:700;
   } */
 
+
+
+  .second-show{ 
+	display: none;
+  }
+  .showcontent-box:hover .second-show{
+	display : block;
+	
+  }
+  .showcontent-box:hover .first-show{
+	display : none;
+  }
 
 
   .showme{ 
@@ -412,6 +426,23 @@ hr {
    
   
   /* * { 	outline: 1px solid #f00 !important;  }  */
+
+
+
+  
+  .content-200 {
+    display: none;
+    border: 1px solid #e92323;
+    padding: 10px;
+  }
+  
+  .active {
+    display: block;
+  }
+
+
+
+
 
 
 .container-s{

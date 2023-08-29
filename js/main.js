@@ -6,21 +6,10 @@ $(document).ready(function(){
 
 
 
-  $("input[name$='cars']").click(function() {
-    var test = $(this).val();
-
-    console.log("clicked : ", test);
-
-    $("div.desc").hide();
-    $("#Cars" + test).show();
-});
-
-
-
   $(window).on("scroll", function() {
 
 
-    if($(window).scrollTop() > 1900) {
+    if($(window).scrollTop() > 600) {
       console.log( "done 600 ");
         $(".bg-v").addClass("hide-v");
         $(".s-view").addClass("hide-li");
@@ -66,6 +55,7 @@ document.getElementById('prev-s').onclick = function(){
       loop:true,
       nav:true,
       margin:10,
+      center : true,
       responsive:{
           0:{
               items:1
