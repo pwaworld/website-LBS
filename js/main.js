@@ -88,7 +88,46 @@ document.getElementById('prev-s').onclick = function(){
   autoPlayYouTubeModal();
 
 
+
+
+//start 
+
+
+const dataSet = [
+  ['Tiger Nixon', 'System Architect', 'Edinburgh', '5421', '2011/04/25', '$320,800'],
+  ['Garrett Winters', 'Accountant', 'Tokyo', '8422', '2011/07/25', '$170,750']];
+
+
+  new DataTable('#example', {
+    columns: [
+        { title: 'Name' },
+        { title: 'Position' },
+        { title: 'Office' },
+        { title: 'Extn.' },
+        { title: 'Start date' },
+        { title: 'Salary' }
+    ],
+    data: dataSet
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end
+
   });
+
+
+
 
 
   function myFunction() {   

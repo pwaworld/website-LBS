@@ -221,6 +221,23 @@ div.sticky {
 }
 
 
+.header-bg-custom3 {
+	--opacity: 0.8;
+	background-image: url(/resources/background/banner-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-bg-custom4 {
+	--opacity: 0.9;
+	background-image: url(/resources/background/banner-66.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
 
 .bg-offce {
 
@@ -425,7 +442,7 @@ hr {
    }
    
   
-  /* * { 	outline: 1px solid #f00 !important;  }  */
+  * { 	outline: 1px solid #f00 !important;  }  
 
 
 
