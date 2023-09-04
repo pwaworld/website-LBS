@@ -1,33 +1,175 @@
 document.addEventListener("DOMContentLoaded", function () {
-
 	'use strict';
 
-	gsap.registerPlugin(ScrollTrigger);
 
-	let sectiomList = gsap.utils.toArray('section')
+	$(window).on("scroll", function() {
 
-	console.log("sectiomList  start ",sectiomList);
+		if($(window).scrollTop() > 200) {
+
+		} else {
+			
+		}
+	});
+
+	
+	ScrollTrigger.create({
+		trigger: "#section-h1",
+		start: "top top",
+		end: "+=200px",
+		pin: true,
+		//markers: true
+	  })
+
+
+	  ScrollTrigger.create({
+		trigger: "#section-services",
+		start: "top top",
+		end: "+=200px",
+		pin: true,
+		//markers: true
+	  })
+
+	  ScrollTrigger.create({
+		trigger: "#section-resources",
+		start: "top top",
+		end: "+=200px",
+		pin: true,
+		//markers: true
+	  })
+
+	  
+
+	  ScrollTrigger.create({
+		trigger: "#section-love",
+		start: "top top",
+		end: "+=200px",
+		pin: true,
+		//markers: true
+	  })
+
+
+	  ScrollTrigger.create({
+		trigger: "#section-contact",
+		start: "top top",
+		end: "+=200px",
+		pin: true,
+		//markers: true
+	  })
 
 
 
 
-	gsap.to(".slide-s", {rotation: 360, x: 100, duration: 2});
+
+
+
+  
+  // Function to handle the scroll event
+  function handleScroll() {
+	const scrollPosition = window.scrollY;
+
+	console.log( "scrollPosition : "+scrollPosition);
+
+	if(scrollPosition >100){
+
+		console.log( "trigger text hide  : ");
+
+	}else{
+
+		console.log( "disable  text hide  : ");
+	}
+  }
+  
+  // Attach the scroll event listener to the window
+  window.addEventListener('scroll', handleScroll);
+
+
+
+	
+
+
+
+
+	/**start   
+
+
+let sections = gsap.utils.toArray("section");
+const firstElem = document.querySelector("section");
+
+function goToSection(i, anim) {
+      
+  gsap.to(window, {
+
+    scrollTo: {y: i*innerHeight + firstElem.offsetTop, autoKill: false},
+    duration: 0.9,
+
+  });
+
+  if(anim) {
+    anim.restart();
+  }
+
+  console.log(i*innerHeight + firstElem.offsetTop);
+
+}
+
+sections.forEach((section, i) => {
+  
+    ScrollTrigger.create({
+       trigger: section,
+       onEnter: () => goToSection(i),
+       markers: true
+     });
+     
+     ScrollTrigger.create({
+       trigger: section,
+       //start: "bottom center",
+	   start: "bottom 20%",
+		markers: true,
+       onEnterBack: () => goToSection(i),
+     });
+  
+});
+
+/**end  */
+
+
+
+// when the scroll velocity is more than 2500px/second, skip the smooth scrubbing
+// function killWhenFast(self) {
+//   let tween = self.getTween();
+//   tween && Math.abs(self.getVelocity()) > 2500 && tween.progress(1);
+// }
+
+
+
+
+
+
+
+//animation for Home End 
+
+
+
+
+
+	//let sectiomList = gsap.utils.toArray('section')
+	//console.log("sectiomList  start ",sectiomList);
+
+	//gsap.to(".slide-s", {rotation: 360, x: 100, duration: 2});
 
 
 	//header comming from top to zero position 
-	gsap.fromTo(".hed-c", {y: -100},{ y: 0, duration: 2});
-	gsap.fromTo(".text-1", {x: -100},{ x: 0, duration: 1});
+	//gsap.fromTo(".hed-c", {y: -100},{ y: 0, duration: 2});
+	//gsap.fromTo(".text-1", {x: -100},{ x: 0, duration: 1});
 
 
-	ScrollTrigger.defaults({
-		toggleActions: "restart pause resume pause"
-		//scroller: ".container"
-	  });
-	const gTl = gsap.timeline();
+	//ScrollTrigger.defaults({toggleActions: "restart pause resume pause"	//scroller: ".container"
+	//  });
+	//const gTl = gsap.timeline();
 
-	var tl = gsap.timeline({repeat: 2, repeatDelay: 1});
+	//var tl = gsap.timeline({repeat: 2, repeatDelay: 1});
 
-	gsap.to("#section-projects", {
+/*	gsap.to("#section-projects", {
 		x: 400,
 		duration: 1,
 		
@@ -39,11 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		  markers: true,
 		  id: "section-projects"
 		}
-	  });
+	  }); */
 
 
 
-	gsap.to("#section-h2", {
+	/* gsap.to("#section-h2", {
 		opacity: 0.9
 	  });
 	  
@@ -59,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		  markers: true,
 		  id: "section-resources"
 		}
-	  });
+	  }); */
 	
 	//tl.to("#section-h5", {x: 150, duration: 1});
 	//tl.to("#section-h6", {x: 200, duration: 2});
@@ -78,13 +220,13 @@ document.addEventListener("DOMContentLoaded", function () {
 //tl.seek(5.0);
 //tl.reverse();
 
-	console.log("data  animate "+gTl);
-	console.log("start animate ");
+	//console.log("data  animate "+gTl);
+	//console.log("start animate ");
 
 
 
 
-
+/*
 	function intro() {
 		console.log("intro  start ");
 		var tl = gsap.timeline();
@@ -111,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	var master = gsap.timeline();
 	master.add(intro())
 		  .add(middle(), "+=3")     //with a gap of 2 seconds
-		  .add(conclusion(), "-=1") 
+		  .add(conclusion(), "-=1")  */
 
 
 

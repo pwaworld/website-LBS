@@ -1,16 +1,10 @@
-
-
-
 $(document).ready(function(){
-	console.log("Ready ...Go");
-
-
+	
 
   $(window).on("scroll", function() {
 
-
     if($(window).scrollTop() > 600) {
-      console.log( "done 600 ");
+      //console.log( "done 600 ");
         $(".bg-v").addClass("hide-v");
         $(".s-view").addClass("hide-li");
 
@@ -26,10 +20,10 @@ $(document).ready(function(){
     var top = this.scrollY,
         left = this.scrollX;
   
-    var horizontalScroll = document.querySelector(".horizontalScroll"),   verticalScroll = document.querySelector(".verticalScroll");
-    console.log( "Scroll X: " + left + "px" +"Scroll Y: " + top + "px");
+    //var horizontalScroll = document.querySelector(".horizontalScroll"),   verticalScroll = document.querySelector(".verticalScroll");
+    //console.log( "Scroll X: " + left + "px" +"Scroll Y: " + top + "px");
 
-    horizontalScroll.innerHTML = "Scroll X: " + top + "px";
+    //horizontalScroll.innerHTML = "Scroll X: " + top + "px";
      // verticalScroll.innerHTML = "Scroll Y: " + top + "px";
   
 }, false);
@@ -82,12 +76,7 @@ document.getElementById('prev-s').onclick = function(){
   // });
 
 
-
-
-
   autoPlayYouTubeModal();
-
-
 
 
 //start 
@@ -111,22 +100,9 @@ const dataSet = [
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 //end
 
   });
-
-
 
 
 

@@ -6,6 +6,11 @@
 }
 
 
+@font-face {
+  font-family: lbsFirstFont;
+  src: url(/resources/lbs-font/monumentextended-freeforpersonaluse/MonumentExtended-Regular.otf);
+}
+
 
 body {
 	--background: var(--second-color);
@@ -133,7 +138,10 @@ div.sticky {
 
 .slidercss {
 	--background-image: linear-gradient(#00FFFF, #E4A0F7);
-	background: linear-gradient(180deg, rgba(228,160,247,1) 30%, rgba(0,255,255,1) 80%);
+	--background: linear-gradient(180deg, rgba(228,160,247,1) 30%, rgba(0,255,255,1) 80%);
+
+  background: linear-gradient(#E4A0F7 20%, #00FFFF);
+  
 
 }
 
@@ -175,6 +183,8 @@ div.sticky {
 
 
 .text-effect {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
 	background: white;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -182,6 +192,8 @@ div.sticky {
 }
 
 .text-effect-active{
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
 	background: -webkit-radial-gradient(#E4A0F7, #00FFFF);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -189,6 +201,15 @@ div.sticky {
 	font-size: xx-large;
 }
 
+.text-effect:hover {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+	background: -webkit-radial-gradient(#E4A0F7, #00FFFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: cell;
+	font-size: xx-large;
+}
 
 .footer-effect {
 	padding-left: 80px;
@@ -204,39 +225,114 @@ div.sticky {
   }
 
 
+.lbs-text-outline{
+  font-weight: 600;
+ 
+  background: -webkit-linear-gradient(180deg, rgba(228,160,247,1) 30%, rgba(0,255,255,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: black;
+}
 
-.header-bg-custom1 {
-	opacity: 0.8;
-	background-image: url(/resources/background/contact-bg.jpg);
+
+.lbs-text-fill{
+  background: -webkit-linear-gradient(70deg, rgba(228,160,247,1) 30%, rgba(0,255,255,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+
+/* 
+.header-bg-career {
+
+	background-image: url(/resources/lbs-banner/Rectangle80.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+
+
+.header-bg-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
+    url(/resources/lbs-banner/Rectangle79.png);
+  background-position: center;
+	color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 
-.header-bg-custom2 {
-	--opacity: 0.8;
-	background-image: url(/resources/background/banner-3.jpg);
+
+
+
+.header-bg-web3 {
+	
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
+  url(/resources/lbs-banner/Rectangle78.png);
+background-position: center;
+color: #ffffff;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.header-bg-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
+    url(/resources/lbs-banner/Rectangle76.png);
+  background-position: center;
+	color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 
-.header-bg-custom3 {
-	--opacity: 0.8;
-	background-image: url(/resources/background/banner-2.jpg);
+
+
+.header-bg-port {
+	
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
+    url(/resources/lbs-banner/Rectangle77.png);
+  background-position: center;
+	color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.header-bg-custom4 {
-	--opacity: 0.9;
-	background-image: url(/resources/background/banner-66.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+
+
+
+.contetnt-h {
+  height: 600px;
+  width: 320px;
+  padding-left: 30px;
+  --background-color: rgba(10, 10, 10, 0);
+  transition: 1s;
 }
 
+.contetnt-a {
+  display: none;
+}
 
+.contetnt-b {
+  display: block;
+}
 
+.contetnt-h:hover {
+  height: 600px;
+  width: 700px;
+
+}
+
+.contetnt-h:hover .contetnt-a {
+  display: block;
+}
+
+.contetnt-h:hover .contetnt-b {
+  display: none;
+}
 
 
 .bg-offce {
@@ -442,8 +538,8 @@ hr {
    }
    
   
-  * { 	outline: 1px solid #f00 !important;  }  
 
+   * { 	outline: 1px solid #f00 !important;  }  
 
 
   
@@ -506,7 +602,7 @@ hr {
 
 
 .panel {
-	scroll-snap-align: start;
+	--scroll-snap-align: start;
 	height: 100vh;
   }
 
