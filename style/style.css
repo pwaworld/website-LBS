@@ -194,7 +194,9 @@ div.sticky {
 .text-effect-active{
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-	background: -webkit-radial-gradient(#E4A0F7, #00FFFF);
+	--background: -webkit-radial-gradient(#E4A0F7, #00FFFF);
+  background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(228,160,247,1) 62%);
+
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: cell;
@@ -204,7 +206,9 @@ div.sticky {
 .text-effect:hover {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-	background: -webkit-radial-gradient(#E4A0F7, #00FFFF);
+	--background: -webkit-radial-gradient(#E4A0F7, #00FFFF);
+  background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(228,160,247,1) 62%);
+
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: cell;

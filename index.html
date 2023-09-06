@@ -91,6 +91,10 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+	<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+	<link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+
+
 
 	<link rel="stylesheet" href="/resources/OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="/resources/OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
@@ -249,7 +253,7 @@
 
 
 
-  <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal fade" id="videoModal-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-xl modal-dialog-centered">
 	  <div class="modal-content" style="background-color: rgb(34, 34, 46);">
 		<div class="modal-header" style="border-bottom: 0ch;">
@@ -267,6 +271,41 @@
   </div>
 
 
+  <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-dialog-centered">
+	  <div class="modal-content" style="background-color: rgb(34, 34, 46);">
+		<div class="modal-header" style="border-bottom: 0ch;">
+		  <button style="background-color: rgb(255, 255, 255);" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			  
+		  <div style="">
+			
+			<video id="my-video" class="video-js" controls preload="auto" autoplay  width="1100" height="800"
+				poster="/resources/lbs-poster/mahaveerudu03.jpg" data-setup="{}">
+				<source src="/resources/bg-reel.mp4" type="video/mp4" />
+
+				<p class="vjs-no-js">
+					To view this video please enable JavaScript, and consider upgrading to a
+					web browser that
+					<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+				</p>
+			</video>
+			
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+
+
+
+
+
 
 
 	<div class="hed-c">
@@ -282,11 +321,11 @@
 				<li class="nav-item s-view"><a href="#" class="nav-link text-effect-active">Home</a></li>
 				<li class="nav-item s-view"><a href="#section-services" class="nav-link text-effect">Services</a></li>
 				<li class="nav-item s-view"><a href="/portfolio.html" class="nav-link text-effect">Portfolio</a></li>
-				<li class="nav-item s-view"><a href="/about.html" class="nav-link text-effect">About</a></li>
-				<li class="nav-item s-view"><a href="/web3.html" class="nav-link text-effect">LBS In-House</a></li>
-				<li class="nav-item s-view"><a href="/contact.html" class="nav-link text-effect">Contact</a></li>
-				<li class="nav-item s-view"><a href="/blogs.html" class="nav-link text-effect">Blog</a></li>
-				<li class="nav-item s-view"><a href="/career.html" class="nav-link text-effect">Careers</a></li>
+			    <!-- <li class="nav-item s-view"><a href="/about.html" class="nav-link text-effect">About</a></li> -->
+				<!-- <li class="nav-item s-view"><a href="/web3.html" class="nav-link text-effect">LBS In-House</a></li> -->
+				<li class="nav-item s-view"><a href="/contact.html" class="nav-link text-effect">Contact</a></li> 
+				<!-- <li class="nav-item s-view"><a href="/blogs.html" class="nav-link text-effect">Blog</a></li> -->
+				<!-- <li class="nav-item s-view"><a href="/career.html" class="nav-link text-effect">Careers</a></li> -->
 				<li class="nav-item showhim"><a href="#" class="nav-link text-effect" data-bs-toggle="offcanvas"
 						data-bs-target="#offcanvas">
 						<img class="ok" src="/resources/m-2-final.png" width="48px" height="40px" alt="My menu SVG" />
@@ -321,31 +360,35 @@
 		<video class="bg-v" src="/resources/bg-reel.mp4" autoplay loop playsinline muted ></video>
 
 		<div style="width: 100%; height: 300px; background-color: black; padding-left: 80px; padding-right: 80px;">
+
+			
+
+
 		</div>
 		<div class="container-fluid text-start"
-			style="padding-left: 80px; padding-right: 80px; height: 100px; background-color: black;">
+			style="padding-left: 80px; padding-right: 80px; height: 100px;  position: relative;">
 
 			<div class="text-1" style="font-size: 40px;  width: 35%;">
 				<p style="font-family: lbsFirstFont; color: #ffffff;">Unleashing Visual</p>
-				<p style="font-family: lbsFirstFont; color: #ffffff;"> <b style="font-family: lbsFirstFont; color: #ffffff; background: linear-gradient(#E4A0F7 20%, #00FFFF);"> &nbsp; Wonders &nbsp;</b> Where  </p> 
+				<p style="font-family: lbsFirstFont; color: #ffffff;"> <b style="font-family: lbsFirstFont; color: #ffffff; background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(228,160,247,1) 62%);"> &nbsp; Wonders &nbsp;</b> Where  </p> 
 				<p style="font-family: lbsFirstFont; color: #ffffff;">Your Imagination</p>
 				<p style="font-family: lbsFirstFont; color: #ffffff;">Meets <b style="font-family:lbsFirstFont; color: #00FFFF;">Reality</b> </p> 
 
 				<!--<button data-bs-toggle="modal" data-tagVideo="https://www.youtube.com/embed/KpllAjxOIUU" 	data-bs-target="#videoModal">Video</button> -->
 
 			</div>
-			<div class="showhim">
+			<div class="showhim" >
 				<div class="showme">
-					<button type="button" data-bs-toggle="modal" style="height: 52px; width: 220px; border-radius: 15px;" data-tagVideo="https://www.youtube.com/embed/KpllAjxOIUU" 	data-bs-target="#videoModal" class=" btn-lbs-after btn-lg "> <b>Watch Show Reel &nbsp; <span
-								style="color: #00FFFF; ">
-								<i class="bi bi-youtube"></i>
-							</span> </b></button>
+					<a type="button" data-bs-toggle="modal" 
+					 data-tagVideo="https://www.youtube.com/embed/KpllAjxOIUU" 	
+					 data-bs-target="#videoModal" class="  ">  <img  class="showme" src="/resources/lbs-button/Property 1=While Hovering.png" 	alt="My menu SVG" /></a>
 				</div>
 				<div class="ok">
-					<button type="button" data-bs-toggle="modal" style="height: 52px; width: 220px; border-radius: 15px;" data-tagVideo="https://www.youtube.com/embed/KpllAjxOIUU" 	data-bs-target="#videoModal" class=" btn-lbs-before btn-lg "> <b>Watch Show Reel &nbsp; <span
-								style="color: #00FFFF; ">
-								<i class="bi bi-youtube"></i>
-							</span> </b></button>
+					<a type="button" data-bs-toggle="modal" 
+					data-tagVideo="https://www.youtube.com/embed/KpllAjxOIUU" 
+						data-bs-target="#videoModal" class="  ">  
+						<img class="ok" src="/resources/lbs-button/Property 1=Default.png" alt="My menu SVG" />
+				</a>
 				</div>
 			</div>
 
@@ -355,7 +398,7 @@
 					</span> </b></button> -->
 
 			<h1 style="font-size: 40px; font-family: Audiowide  ;text-shadow: 2px 2px 5px #008ff3; width: 400px;">
-				.</h1>
+				</h1>
 		</div>
 
 		<div class="container-fluid text-start" 
@@ -591,7 +634,7 @@
 		</div>
 	</section>
 
-	<section class="panel-s" id="section-love" style="height: 1153px;  background-image: linear-gradient(to right, #493735, #014747);">
+	<section class="panel-s" id="section-love" style="height: 1153px;  background-image: linear-gradient(to right, #493735, #014747); display: none;">
 		<div style="width: 100%; height: 100px;">
 			
 		</div>
