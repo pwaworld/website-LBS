@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: lbsFirstFont;
-  src: url(/resources/lbs-font/monumentextended-freeforpersonaluse/MonumentExtended-Regular.otf);
+  src: url(../resources/lbs-font/monumentextended-freeforpersonaluse/MonumentExtended-Regular.otf);
 }
 
 
@@ -262,7 +262,7 @@ div.sticky {
 
 .header-bg-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
-    url(/resources/lbs-banner/Rectangle79.png);
+    url(../resources/lbs-banner/Rectangle79.png);
   background-position: center;
 	color: #ffffff;
 	background-repeat: no-repeat;
@@ -276,7 +276,7 @@ div.sticky {
 .header-bg-web3 {
 	
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
-  url(/resources/lbs-banner/Rectangle78.png);
+  url(../resourceslbs-banner/Rectangle78.png);
 background-position: center;
 color: #ffffff;
 background-repeat: no-repeat;
@@ -285,7 +285,7 @@ background-size: cover;
 
 .header-bg-about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
-    url(/resources/lbs-banner/Rectangle76.png);
+    url(../resources/lbs-banner/Rectangle76.png);
   background-position: center;
 	color: #ffffff;
 	background-repeat: no-repeat;
@@ -298,7 +298,7 @@ background-size: cover;
 .header-bg-port {
 	
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
-    url(/resources/lbs-banner/Rectangle77.png);
+    url(../resourceslbs-banner/Rectangle77.png);
   background-position: center;
 	color: #ffffff;
 	background-repeat: no-repeat;
