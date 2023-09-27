@@ -1,0 +1,65 @@
+CREATE DATABASE lbs-demo;
+USE lbs-demo;
+
+
+DROP TABLE IF EXISTS `contact_submissions`;
+
+CREATE TABLE contact_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phoneno VARCHAR(20) NOT NULL,
+    categorytype VARCHAR(40) NOT NULL,
+    message TEXT NOT NULL,
+    comments TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DROP TABLE IF EXISTS `blog_submissions`;
+CREATE TABLE blog_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+	subtitle VARCHAR(255) NOT NULL,
+    authorname VARCHAR(255) NOT NULL,
+     thumnail_img VARCHAR(255) NOT NULL,
+     post_img VARCHAR(255) NOT NULL,
+    video_link VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+metatags TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DROP TABLE IF EXISTS `job_profile_submissions`;
+
+CREATE TABLE job_profile_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    role VARCHAR(255) NOT NULL,
+	experience VARCHAR(255) NOT NULL,
+    jobtype VARCHAR(255) NOT NULL,
+ location VARCHAR(255) NOT NULL,
+department VARCHAR(255) NOT NULL,
+    jobdetails TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+DROP TABLE IF EXISTS `portfolio_submissions`;
+
+CREATE TABLE portfolio_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+	subtitle VARCHAR(255) NOT NULL,
+     thumnail_img VARCHAR(255) NOT NULL,
+     post_img VARCHAR(255) NOT NULL,
+    video_link VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+
+
+
+

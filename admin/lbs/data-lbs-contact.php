@@ -9,9 +9,6 @@
 </body>
 </html>
 
-
-
-
 <?php
 // Database connection settings
 $dbHost = 'localhost';
