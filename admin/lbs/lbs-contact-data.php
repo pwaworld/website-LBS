@@ -418,9 +418,12 @@ $(document).ready(function() {
                     { data: 'created_at' },
                     { data: 'phoneno' },
                     { data: 'categorytype' },
-                    { data: 'comments' }
-                    
-
+                    { data: 'comments' },
+                    { data: 'action',
+                      render: function (data, type) {
+                        return '<a type="button" class="btn btn-danger"  data-toggle="modal" data-target="#editMemberModal"  onclick="editMember(data[0])"> <span class="glyphicon glyphicon-edit"></span>Delete</a>'
+                      }
+                     }
                 ]
             });
         },

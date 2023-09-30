@@ -219,7 +219,7 @@
 		<div class="container-fluid"  style=" width: 100%;  background-color: black; padding-left: 80px; padding-right: 80px;  padding-top: 60px;">
 
 
-			<form>
+			<form id="myForm">
 				<div class="row">
 					<div class="col-10" > </div>
 					<div class="col-5">
@@ -265,13 +265,14 @@
 							
 							<div class="showhim col-sm" style="padding-left: 630px;">
 								<div class="showme">
-									<button type="button" class=" btn-lbs-after btn-lg "> <b>Send Message &nbsp; <span
+									<button type="submit" class=" btn-lbs-after btn-lg "> <b>Send Message &nbsp; <span
 												style="color: #00FFFF;">
 												<i class="bi bi-arrow-right"></i>
 											</span> </b></button>
 								</div>
 								<div class="ok">
-									<button type="button" class=" btn-lbs-before btn-lg "> <b>Send Message &nbsp; <span
+									<button type="submit"   onclick="submitForm(event)"  
+									 class=" btn-lbs-before btn-lg "> <b>Send Message &nbsp; <span
 												style="color: #00FFFF;">
 												<i class="bi bi-arrow-right"></i>
 											</span> </b></button>
@@ -290,6 +291,9 @@
 
 			</form>
 			<br>
+
+			<p id="result"></p>
+
 		</div>
 
 	</section>
@@ -363,6 +367,19 @@
 	<script src="js/main.js"></script>
 
 	<script src="https://player.vimeo.com/api/player.js"></script>
+
+
+	<script>
+     
+
+	$("form").submit(function(){
+alert('Form is submitting....');
+// Or Do Something...
+return true;
+});
+$("form").submit();
+   </script>
+
 
 
 </body>

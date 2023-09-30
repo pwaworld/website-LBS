@@ -19,7 +19,16 @@
         <input type="text" name="phoneno" id="phoneno" required><br>
 
         <label for="categorytype">category type:</label>
-        <input type="categorytype" name="categorytype" id="categorytype" required><br>
+       
+
+        <select name="categorytype" id="categorytype" required>
+    <option value="vfx">Vfx</option>
+    <option value="animation">animation</option>
+    <option value="3d">3D</option>
+    <option value="others">Others</option>
+   
+  </select> <br>
+
 
         <label for="comments">comments:</label>
         <input type="text" name="comments" id="phoneno" required><br>

@@ -8,8 +8,7 @@ if ($mysqli->connect_error) {
 }
 
 // Fetch data from the database (you can customize this query as needed)
-$query = "SELECT id, role, experience ,jobtype,location, department, jobdetails, created_at FROM job_profile_submissions";
-
+$query = "SELECT id, title, subtitle, thumnail_img, post_img ,video_link, m_description, created_at FROM portfolio_submissions";
 
 
 $result = $mysqli->query($query);

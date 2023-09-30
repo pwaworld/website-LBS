@@ -23,11 +23,17 @@ CREATE TABLE blog_submissions (
     authorname VARCHAR(255) NOT NULL,
      thumnail_img VARCHAR(255) NOT NULL,
      post_img VARCHAR(255) NOT NULL,
-    video_link VARCHAR(255) NOT NULL,
-    description TEXT NOT NULL,
+    video_link VARCHAR(255)  NULL,
+    m_description1 TEXT NOT NULL,
+     m_description2 TEXT  NULL,
+       m_description3 TEXT  NULL,
+         m_description4 TEXT  NULL,
+          m_description5 TEXT  NULL,
 metatags TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 
 DROP TABLE IF EXISTS `job_profile_submissions`;
 
@@ -52,12 +58,25 @@ CREATE TABLE portfolio_submissions (
      thumnail_img VARCHAR(255) NOT NULL,
      post_img VARCHAR(255) NOT NULL,
     video_link VARCHAR(255) NOT NULL,
-    description TEXT NOT NULL,
+    m_description TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+DROP TABLE IF EXISTS `project_submissions`;
+
+CREATE TABLE project_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    small_img VARCHAR(255) NOT NULL,
+big_img VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 
 
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM project_submissions WHERE small_img like '%%';
 
 
 
