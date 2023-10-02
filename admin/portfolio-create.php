@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio  Form</title>
+    <title>LBS</title>
 </head>
 <body>
-    <h1>Portfolio create</h1>
+    <h1>Create Portfolio : </h1>
     <form action="portfolio-create.php" method="POST" enctype="multipart/form-data">
         <label for="title">Title:</label>
         <input type="text" name="title" id="title" required><br>

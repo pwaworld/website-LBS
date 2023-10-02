@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <title>LBS</title>
 </head>
+
+
 <body>
-    <h1>Contact Us</h1>
+    <h1>Create Contact :</h1>
     <form action="contact-create.php" method="post">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required><br>
@@ -84,3 +86,7 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
+
+
+
+

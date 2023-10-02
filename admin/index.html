@@ -201,7 +201,7 @@
 </svg>
 
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">LBS CRM-Dashboard</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./">LBS-Dashboard</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     <li class="nav-item text-nowrap">
@@ -240,8 +240,8 @@
             </li>
             <hr class="my-3">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./lbs/lbs-contact-data.php">
-                <i class="bi bi-stack"></i>
+              <a class="nav-link d-flex align-items-center gap-2" href="lbs-contact-data.php">
+                <i class="bi bi-telephone-inbound-fill"></i>
                 Contacts Data
               </a>
             </li>
@@ -250,16 +250,16 @@
 
             <hr class="my-3">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./lbs/lbs-job-profile-data.php">
-                <i class="bi bi-ui-checks"></i>
+              <a class="nav-link d-flex align-items-center gap-2" href="./lbs-job-profile-data.php">
+                <i class="bi bi-person-lines-fill"></i>
                 Job Profile Data
               </a>
             </li>
 
             <hr class="my-3">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./lbs/lbs-projects-data.php">
-                <i class="bi bi-stack"></i>
+              <a class="nav-link d-flex align-items-center gap-2" href="./lbs-projects-data.php">
+                <i class="bi bi-collection-play-fill"></i>
                 Projects Data
               </a>
             </li>
@@ -267,8 +267,8 @@
             <hr class="my-3">
 
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./lbs/lbs-trusted-data.php">
-                <i class="bi bi-sliders"></i>
+              <a class="nav-link d-flex align-items-center gap-2" href="./lbs-trusted-data.php">
+                <i class="bi bi-stars"></i>
                 Trusted Data
               </a>
             </li>
@@ -276,15 +276,15 @@
             <hr class="my-3">
 
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./lbs/lbs-portfolio-data.php">
-                <i class="bi bi-sliders"></i>
+              <a class="nav-link d-flex align-items-center gap-2" href="./lbs-portfolio-data.php">
+                <i class="bi bi-film"></i>
                 Portfolio Data
               </a>
             </li>
 
            <hr class="my-3">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./lbs/lbs-blog-data.php">
+              <a class="nav-link d-flex align-items-center gap-2" href="./lbs-blog-data.php">
                 <i class="bi bi-ui-checks-grid"></i>
                 Blogs Data
               </a>
@@ -295,23 +295,15 @@
 
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
             <span>Create Contact</span>
-            <a class="link-secondary" href="./pages/contact-create.php" aria-label="Add a new report">
+            <a class="link-secondary" href="contact-create.php" aria-label="Add a new report">
               <svg class="bi"><use xlink:href="#plus-circle"/></svg>
             </a>
           </h6>
 
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-            <span>Create Blog</span>
-            <a class="link-secondary" href="./pages/blog-create.php" aria-label="Add a new report">
-              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
-            </a>
-          </h6>
-
-         
 
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
             <span>Create Job Profile</span>
-            <a class="link-secondary" href="./pages/job-create.php" aria-label="Add a new report">
+            <a class="link-secondary" href="./job-create.php" aria-label="Add a new report">
               <svg class="bi"><use xlink:href="#plus-circle"/></svg>
             </a>
           </h6>
@@ -319,42 +311,38 @@
 
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
             <span>Create Project</span>
-            <a class="link-secondary" href="./pages/project-create.php" aria-label="Add a new report">
+            <a class="link-secondary" href="./project-create.php" aria-label="Add a new report">
               <svg class="bi"><use xlink:href="#plus-circle"/></svg>
             </a>
           </h6>
 
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-            <span>Create Portfolio</span>
-            <a class="link-secondary" href="./pages/portfolio-create.php" aria-label="Add a new report">
-              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
-            </a>
-          </h6>
 
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
             <span>Create Trusted </span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
+            <a class="link-secondary" href="./trust-create.php" aria-label="Add a new report">
               <svg class="bi"><use xlink:href="#plus-circle"/></svg>
             </a>
           </h6>
+
+
+          
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <span>Create Portfolio</span>
+            <a class="link-secondary" href="./portfolio-create.php" aria-label="Add a new report">
+              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
+            </a>
+          </h6>
+
 
 
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-            <span>Create Job </span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
+            <span>Create Blog</span>
+            <a class="link-secondary" href="./blog-create.php" aria-label="Add a new report">
               <svg class="bi"><use xlink:href="#plus-circle"/></svg>
             </a>
           </h6>
 
-
-
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-            <span>Reports</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
-            </a>
-          </h6>
-         
+                       
 
           <hr class="my-3">
 
@@ -386,33 +374,33 @@
      
 
       <h2>Contacts Notifications</h2>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-light">4</span>
+      <button type="button" class="btn btn-success">
+        Total Records <span class="badge badge-light">4</span>
       </button>
 
 
       <h2>Jobs Notifications</h2>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-light">4</span>
+      <button type="button" class="btn btn-success">
+        Total Records <span class="badge badge-light">4</span>
       </button>
 
 
 
       <h2>Blogs Notifications</h2>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-light">4</span>
+      <button type="button" class="btn btn-success">
+        Total Records <span class="badge badge-light">4</span>
       </button>
 
 
       <h2>Projects Notifications</h2>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-light">4</span>
+      <button type="button" class="btn btn-success">
+        Total Records <span class="badge badge-light">4</span>
       </button>
 
 
       <h2>Portfolio Notifications</h2>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-light">4</span>
+      <button type="button" class="btn btn-success">
+        Total Records <span class="badge badge-light">4</span>
       </button>
 
 
@@ -423,7 +411,7 @@
     </main>
   </div>
 </div>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous"></script><script src="dashboard.js"></script></body>
 </html>

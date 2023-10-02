@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects Form</title>
+    <title>LBS</title>
 </head>
 <body>
-    <h1>Project Us</h1>
+    <h1>Create Project : </h1>
     <form action="project-create.php" method="POST" enctype="multipart/form-data">
         <label for="title">Title:</label>
         <input type="text" name="title" id="title" required><br>

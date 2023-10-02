@@ -74,6 +74,17 @@ big_img VARCHAR(255) NOT NULL,
 );
 
 
+DROP TABLE IF EXISTS `trusted_submissions`;
+
+CREATE TABLE trusted_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    comments VARCHAR(255) NOT NULL,
+    small_img VARCHAR(255) NOT NULL,
+    clientname VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
 
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM project_submissions WHERE small_img like '%%';

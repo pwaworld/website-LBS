@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <title>LBS</title>
 </head>
 <body>
-    <h1>Create Job </h1>
+    <h1>Create Job Profile :</h1>
     <form action="job-create.php" method="post">
         <label for="role">Role:</label>
         <input type="text" name="role" id="role" required><br>

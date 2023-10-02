@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio  Form</title>
+    <title>LBS</title>
 </head>
 <body>
-    <h1>Blog create</h1>
+    <h1>Create Blog :</h1>
     <form action="blog-create.php" method="POST" enctype="multipart/form-data">
 
 
