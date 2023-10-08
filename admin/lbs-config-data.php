@@ -209,7 +209,7 @@
 </svg>
 
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">LBS-Dashboard</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./">LBS-Dashboard</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     <li class="nav-item text-nowrap">
@@ -241,7 +241,7 @@
           <ul class="nav flex-column">
            
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="./">
                 <i class="bi bi-exclude"></i>
                 Dashboard
               </a>
@@ -369,7 +369,7 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Job Profile Data</h1>
+        <h1 class="h2">Config Data</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
@@ -385,12 +385,9 @@
           <thead>
               <tr>
                   <th>ID</th>
-                  <th>Role</th>
-                  <th>Experience</th>
-                  <th>Job Type</th>
-                  <th>Location</th>
-                  <th>Department</th>
-                  <th>Job Details</th>
+                  <th>Key</th>
+                  <th>Link</th>
+                  <th>Text Image</th>
                   <th>Created At</th>
                   <th>Status</th>
                   <th>Actions</th>
@@ -408,23 +405,39 @@
 <script>
 
 $(document).ready(function() {
+
+
+  function editMember(clicked_id)
+  {
+      alert(clicked_id);
+  }
+
+
     // Fetch JSON data from the PHP URL
     $.ajax({
-        url: 'api-all-job-profiles.php', // Replace with your PHP URL
+        url: './api-all-config.php', // Replace with your PHP URL
         method: 'GET',
         dataType: 'json',
         success: function(data) {
             // Initialize the DataTable with the fetched data
             $('#data-table').DataTable({
                 data: data,
+                pagingType: 'full_numbers',
                 columns: [
                     { data: 'id' },
-                    { data: 'role' },
-                    { data: 'experience' },
-                    { data: 'jobtype' },
-                    { data: 'location' },
-                    { data: 'department' },
-                    { data: 'jobdetails' },
+                    { data: 'm_key' },
+                    { data: 'm_text' },
+                    { data: 'm_link', 
+                   
+                      render: function (data, type) {
+                          if (true) {
+                                      
+                              return '<a href="' + data + '">' + data + '</a>';
+                          }
+          
+                          return data;
+                      }
+                    },
                     { data: 'created_at' },
                     { data: 'is_active' ,
                       render: function (data, type) {
@@ -436,20 +449,26 @@ $(document).ready(function() {
                       }
                     
                     },
-                  
                     { data: 'action',
                       render: function (data, type) {
                         return '<a type="button" class="btn btn-danger"  data-toggle="modal" data-target="#editMemberModal"  onclick="editMember(data[0])"> <span class="glyphicon glyphicon-edit"></span>Delete</a>'
                       }
                      }
-                ]
+
+                ],
+
+               
             });
         },
         error: function(error) {
             console.error('Error fetching JSON data:', error);
         }
     });
+
+
+
 });
+
 
 </script>
 

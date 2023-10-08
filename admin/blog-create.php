@@ -59,10 +59,7 @@
 
 <?php
 // Database connection settings
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = 'mysql';
-$dbName = 'lbs-demo';
+include('config.php');
 
 // Create a database connection
 $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);

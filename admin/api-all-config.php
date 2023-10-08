@@ -11,8 +11,7 @@ if ($mysqli->connect_error) {
 }
 
 // Fetch data from the database (you can customize this query as needed)
-$query = "SELECT id, role, experience ,jobtype,location, department, jobdetails, created_at, is_active FROM job_profile_submissions";
-
+$query = "SELECT id, m_key, m_link ,m_text, created_at, is_active FROM lbs_config";
 
 
 $result = $mysqli->query($query);

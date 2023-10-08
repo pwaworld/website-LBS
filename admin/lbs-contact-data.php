@@ -392,6 +392,7 @@
                   <th>phoneno</th>
                   <th>categorytype</th>
                   <th>comments</th>
+                  <th>Status</th>
                   <th>Actions</th>
               </tr>
           </thead>
@@ -425,6 +426,16 @@ $(document).ready(function() {
                     { data: 'phoneno' },
                     { data: 'categorytype' },
                     { data: 'comments' },
+                    { data: 'is_active' ,
+                      render: function (data, type) {
+                        if (data === "N") {
+                          return '<span style="color:red"><i class="bi bi-square-fill"></i></span>';
+                        } else {
+                          return '<span style="color:green"><i class="bi bi-square-fill"></i></span>';
+                        }
+                      }
+                    
+                    },
                     { data: 'action',
                       render: function (data, type) {
                         return '<a type="button" class="btn btn-danger"  data-toggle="modal" data-target="#editMemberModal"  onclick="editMember(data[0])"> <span class="glyphicon glyphicon-edit"></span>Delete</a>'

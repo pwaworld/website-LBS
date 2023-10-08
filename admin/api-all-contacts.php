@@ -1,6 +1,11 @@
 <?php
-// Establish a database connection (replace with your own database credentials)
-$mysqli = new mysqli("localhost", "root", "mysql", "lbs-demo");
+
+// Database connection settings
+include('config.php');
+
+// Create a database connection
+$mysqli = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
+
 
 // Check connection
 if ($mysqli->connect_error) {
@@ -8,7 +13,7 @@ if ($mysqli->connect_error) {
 }
 
 // Fetch data from the database (you can customize this query as needed)
-$query = "SELECT id, name, email ,phoneno, categorytype, message,comments, created_at FROM contact_submissions";
+$query = "SELECT id, name, email ,phoneno, categorytype, message,comments, created_at, is_active FROM contact_submissions";
 
 
 $result = $mysqli->query($query);

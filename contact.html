@@ -271,7 +271,7 @@
 											</span> </b></button>
 								</div>
 								<div class="ok">
-									<button type="submit"   onclick="submitForm(event)"  
+									<button type="submit"   onclick="submitForm(event)"   id="submitBtn"
 									 class=" btn-lbs-before btn-lg "> <b>Send Message &nbsp; <span
 												style="color: #00FFFF;">
 												<i class="bi bi-arrow-right"></i>
@@ -370,15 +370,47 @@
 
 
 	<script>
-     
+		// Attach a submit handler to the form
 
-	$("form").submit(function(){
-alert('Form is submitting....');
-// Or Do Something...
-return true;
+
+
+		$(document).ready(function(){
+    $("#submitBtn").click(function(){   
+		
+		
+
+        //$("#myForm").submit(); // Submit the form
+    });
 });
-$("form").submit();
-   </script>
+
+
+		$( "#userForm" ).submit(function( event ) {
+		 
+		  // Stop form from submitting normally
+		  event.preventDefault();
+		 
+		  // Get some values from elements on the page:
+		  var $form = $( this ),
+			username = $form.find( "input[name='username']" ).val(),
+			url = "https://api.github.com/users/"+username+"/repos";
+		 
+		  // Send the data using post
+		  var posting = $.post( url, { s: term } );
+		 
+		  //Ajax Function to send a get request
+		  $.ajax({
+			type: "GET",
+			url: url,
+			dataType:"jsonp"
+			success: function(response){
+				//if request if made successfully then the response represent the data
+		
+				$( "#result" ).empty().append( response );
+			}
+		  });
+		  
+		});
+		</script>
 
 
 
