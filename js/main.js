@@ -15,12 +15,21 @@ $(document).ready(function(){
 });
 
 
+$(".second-text").addClass("hide-text-2");
 
+$(window).on("scroll", function() {
 
-
-
-
-
+  
+  if($(window).scrollTop() > 50) {
+    //console.log( "done 600 ");
+      $(".first-text").addClass("hide-text-1");
+      $(".second-text").removeClass("hide-text-2");
+      
+  } else {
+     $(".first-text").removeClass("hide-text-1");
+     $(".second-text").addClass("hide-text-2");
+  }
+});
 
 
 
@@ -102,6 +111,19 @@ document.getElementById('prev-s').onclick = function(){
   document.getElementById('slide-s').prepend(lists[lists.length - 1]);
 }
 
+
+
+$('.nonloop').owlCarousel({
+  center: true,
+  items:4,
+  loop:true,
+  margin:10,
+  responsive:{
+      600:{
+          items:4
+      }
+  }
+});
 
 
 

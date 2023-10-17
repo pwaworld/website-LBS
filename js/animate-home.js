@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		start: "top top",
 		end: "+=200px",
 		pin: true,
-		markers: true
+		//markers: true
 	  })
 
 	  ScrollTrigger.create({
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		start: "top top",
 		end: "+=200px",
 		pin: true,
-		markers: true
+		//markers: true
 	  })
 
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		start: "top top",
 		end: "+=200px",
 		pin: true,
-		markers: true
+		//markers: true
 	  })
 
 	  
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		start: "top top",
 		end: "+=400px",
 		pin: true,
-		markers: true
+		//markers: true
 	  })
 
 
