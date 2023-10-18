@@ -264,6 +264,23 @@ div.sticky {
 }
 
 
+.first-text,.second-text {
+  opacity: 0;
+}
+
+
+.first-text {
+  position: absolute;
+  --top: 50%;
+  left: 5%;
+}
+
+.second-text {
+  position: absolute;
+  --top: 50%;
+  left: 5%;
+}
+
 
 
 
@@ -311,6 +328,7 @@ background-size: cover;
 
 
 
+
 .header-bg-port {
 	
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)),
@@ -327,7 +345,8 @@ background-size: cover;
   width: 320px;
   padding-left: 30px;
   --background-color: rgba(10, 10, 10, 0);
-  transition: 3s;
+  --transition: 3s;
+  --animation: fadeIn 3s;
   
 }
 
@@ -337,18 +356,21 @@ background-size: cover;
 }
 
 .contetnt-b {
+  animation: fadeIn 1s;
   display: block;
 }
 
 .contetnt-h:hover {
   height: 600px;
   width: 700px;
-  
+  animation: fadeIn 2s;
 
 }
 
 .contetnt-h:hover .contetnt-a {
   display: block;
+
+  animation: fadeIn 2s;
   
 }
 
@@ -720,7 +742,8 @@ dialog {
   top:50%;
   transform: translate(-50%,-50%);
   --width:950px;
-  height:1000px;
+  --height:1000px;
+  height:935px;
   padding:50px;
   background-color: #2e252500;
   box-shadow: 0 30px 50px #000000;
@@ -759,7 +782,7 @@ dialog {
   padding-left: 100px;
   
   
- color: white;
+ color: rgb(255, 255, 255);
  font-size: 70px;
  font-family: 'lbsFirstFont';
  --box-shadow:  0 30px 50px #000000;
@@ -768,7 +791,9 @@ dialog {
 
 
 .item-s:nth-child(3){
-  left:70%;
+  height: 450px;
+  width: 270px;
+  left:66%;
  
   font-size: 0.5px;
 }
@@ -836,7 +861,7 @@ dialog {
 }
 .buttons{
   position: absolute;
-  bottom:30px;
+  bottom:80px;
   z-index: 222222;
   text-align: center;
   width:100%;
@@ -862,5 +887,65 @@ dialog {
 
 
 
+.logoright{
+padding-left: 1490px;
+animation: fadeIn 5s;
+
+}
+
+.logoright-80{
+  padding-left: 80px;
+  animation: fadeIn 4s;
+  
+  }
 
 
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  
+
+.arrow {
+  position: absolute;
+  top: 70%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  transform: rotate(0deg);
+  cursor: pointer;
+  padding-top: 150px;
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}

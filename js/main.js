@@ -4,32 +4,44 @@ $(document).ready(function(){
   $(window).on("scroll", function() {
 
     if($(window).scrollTop() > 600) {
-      //console.log( "done 600 ");
+      console.log( "done 600 ");
         $(".bg-v").addClass("hide-v");
         $(".s-view").addClass("hide-li");
+
+        $(".logox").addClass("logoright");
+        $(".logox").removeClass("logoright-80");
+
 
     } else {
        $(".bg-v").removeClass("hide-v");
        $(".s-view").removeClass("hide-li");
+
+       $(".logox").removeClass("logoright");
+       $(".logox").addClass("logoright-80");
+
     }
 });
 
 
-$(".second-text").addClass("hide-text-2");
 
-$(window).on("scroll", function() {
+
+
+
+// $(".second-text").addClass("hide-text-2");
+
+// $(window).on("scroll", function() {
 
   
-  if($(window).scrollTop() > 50) {
-    //console.log( "done 600 ");
-      $(".first-text").addClass("hide-text-1");
-      $(".second-text").removeClass("hide-text-2");
+//   if($(window).scrollTop() > 50) {
+//     //console.log( "done 600 ");
+//       $(".first-text").addClass("hide-text-1");
+//       $(".second-text").removeClass("hide-text-2");
       
-  } else {
-     $(".first-text").removeClass("hide-text-1");
-     $(".second-text").addClass("hide-text-2");
-  }
-});
+//   } else {
+//      $(".first-text").removeClass("hide-text-1");
+//      $(".second-text").addClass("hide-text-2");
+//   }
+// });
 
 
 
@@ -116,8 +128,9 @@ document.getElementById('prev-s').onclick = function(){
 $('.nonloop').owlCarousel({
   center: true,
   items:4,
-  loop:true,
+  loop: true,
   margin:10,
+   
   responsive:{
       600:{
           items:4

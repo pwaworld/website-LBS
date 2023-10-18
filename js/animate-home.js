@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	ScrollTrigger.create({
 		trigger: "#section-h1",
 		start: "top top",
-		end: "+=200px",
+		end: "+=400px",
 		pin: true,
 		//markers: true
 	  })
@@ -67,6 +67,30 @@ document.addEventListener("DOMContentLoaded", function () {
 	  })
 
 
+
+
+	
+
+
+	  const tl = gsap.timeline( { 
+   
+		scrollTrigger: {
+		  trigger: ".first-text",
+		  start: "+=133 75%",
+		  end: "+=100 50%",
+		  scrub: true,
+		 //markers: true,
+		  toggleActions: "play reverse play reverse",
+		}
+		
+	  });
+	  
+	  tl
+		.to('.first-text', { opacity: 1, duration: 1.0 })
+		.to('.first-text', { opacity: 0, duration: 1.0 },1.0)
+		.to('.second-text', { opacity: 1, duration: 1.0 })
+		.to('.second-text', { opacity: 0, duration: 1.0 },
+			1.0);
 
 
 
