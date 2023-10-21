@@ -33,8 +33,14 @@ while ($row = $result->fetch_assoc()) {
 // Close the database connection
 $mysqli->close();
 
+
+
 // Set the response content type to JSON
 header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: PUT, GET, POST");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+
 
 // Convert the PHP array to JSON and echo it
 echo json_encode($data);

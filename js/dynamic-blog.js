@@ -6,6 +6,55 @@ console.log("blog loaded ");
 
 var dataListContainer = document.getElementById("data-list");
 
+//var apiUrlLbs = 'http://localhost/web/website-LBS/admin/api-all-blogs.php';
+
+var apiUrlLbs = 'https://littleblackstarfx.com/admin/api-all-blogs.php';
+
+
+sendGetRequest(apiUrlLbs, function(error, data) {
+  if (error) {
+    console.error('Error:', error);
+  } else {
+    console.log('blog Data:', data);
+
+    var blogPostsDataList = data;
+    //console.log('postsDataList :', postsDataList);
+
+     // Loop through the data array and create list items
+     for (var i = 0; i < blogPostsDataList.length; i++) {
+                
+          
+          var title = blogPostsDataList[i].title;
+          var m_description1 = blogPostsDataList[i].m_description1;
+          var datee = blogPostsDataList[i].created_at;
+
+
+          document.getElementById("ptitle").innerHTML = title;
+          document.getElementById("pdate").innerHTML = datee;
+
+          document.getElementById("p1").innerHTML = m_description1;
+          document.getElementById("p2").innerHTML = blogPostsDataList[i].m_description2;
+          document.getElementById("p3").innerHTML = blogPostsDataList[i].m_description3;
+          document.getElementById("p4").innerHTML = blogPostsDataList[i].m_description4;
+
+          //console.log('title  :', title);
+         
+          console.log('title :', title);
+          console.log('Date posted  :', datee);
+          console.log('m_description1 :  :', m_description1);
+
+
+
+    }
+
+  }
+});
+
+
+
+
+
+
 
 // Example usage
 var apiUrl = 'https://public-api.wordpress.com/rest/v1/read/tags/wordpress/posts/?number=9';
